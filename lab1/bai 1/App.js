@@ -1,4 +1,4 @@
-import { StatusBar } from "expo-status-bar";
+// 20520541 - Ngô Nhật Huy
 import { useState } from "react";
 import {
   StyleSheet, Text, View, Image, ScrollView, TouchableOpacity } from "react-native";
@@ -48,7 +48,7 @@ const postData = [
     isLiked: false,
   },
 ];
-
+// 20520541 - Ngô Nhật Huy
 export default function App() {
   const [post, setPost] = useState([...postData]);
   const commentClick = (postID) => {
@@ -99,7 +99,7 @@ export default function App() {
             <Image style={styles.avatar} source={index.avatar} />
             <Text style={styles.username}>{index.username}</Text>
           </View>
-
+          {/* 20520541 - Ngô Nhật Huy */}
           <View style={styles.imageContainer}>
             <Text style={styles.postText}>{index.postText}</Text>
             <Image style={styles.postImage} source={index.postImage} />
@@ -162,7 +162,7 @@ export default function App() {
             </TouchableOpacity>
           </View>
         </View>
-      ))}
+      ))}  {/* 20520541 - Ngô Nhật Huy */}
     </ScrollView>
   );
 }
@@ -229,7 +229,8 @@ const styles = StyleSheet.create({
   buttonIcon: {
     width: 20,
     height: 20,
-  },
+  }, 
+  // 20520541 - Ngô Nhật Huy
   buttonContent: {
     flexDirection: "row",
     alignItems: "center",

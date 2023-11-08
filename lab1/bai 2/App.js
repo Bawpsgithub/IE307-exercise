@@ -3,7 +3,7 @@ import {
   FlatList, StyleSheet, Text, TouchableOpacity, View, ImageBackground, SectionList } from "react-native";
 import { workouts, fruits_vegetables } from "./data.js";
 
-
+// 20520541 - Ngô Nhật Huy
 export default function App() {
   const [selectedTypes, setSelectedTypes] = useState([]);
   const renderItem = ({ item }) => {
@@ -100,7 +100,7 @@ export default function App() {
     </View>
   );
 }
-
+// 20520541 - Ngô Nhật Huy
 const styles = StyleSheet.create({
 
 
@@ -151,6 +151,7 @@ const styles = StyleSheet.create({
     marginLeft: 140,
     width: 80,
   },
+  // 20520541 - Ngô Nhật Huy
   buttonContent: {
     color: "white",
      alignItems: "center",
