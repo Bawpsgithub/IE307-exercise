@@ -8,7 +8,7 @@ const Categories1 = () => {
     </View>
   );
 };
-
+// Ngô Nhật Huy - 20520541
 const Categories2 = () => {
   return (
     <View style={styles.container}>

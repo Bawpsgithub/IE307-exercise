@@ -4,7 +4,6 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import { useNavigation } from '@react-navigation/native';
 import { Pressable } from 'react-native';
-import MainDrawer from './MainDrawer';
 import Home from '../screens/Home';
 import HomeDetails from '../screens/HomeDetails';
 import Categories from '../screens/Categories';
@@ -21,7 +20,7 @@ const StackDetails = () => {
     <Stack.Navigator>
       <Stack.Screen
         name="Home"
-        component={NavBar}
+        component={MainBottom}
         options={{ headerShown: false }}
       />
       <Stack.Screen
@@ -32,7 +31,7 @@ const StackDetails = () => {
     </Stack.Navigator>
   );
 };
-
+// Ngô Nhật Huy - 20520541
 const CategoriesTab = () => {
   return (
     <Tab.Navigator>
@@ -55,7 +54,7 @@ const HeaderLeftIcon = () => {
 };
 
 const TabIcon = ({ name, focused }) => {
-  return <IonIcon name={name} size={25} color={focused ? '#0081F1' : '#000'} />;
+  return <IonIcon name={name} size={25} color={focused ? '#4390f7' : '#000'} />;
 };
 
 const homeScreenOptions = (headerShown, name, isHome) => {
@@ -65,8 +64,8 @@ const homeScreenOptions = (headerShown, name, isHome) => {
     headerLeft: isHome ? HeaderLeftIcon : null,
   };
 };
-
-const NavBar = () => {
+// Ngô Nhật Huy - 20520541
+const MainBottom = () => {
   return (
     <Bottom.Navigator>
       <Bottom.Screen

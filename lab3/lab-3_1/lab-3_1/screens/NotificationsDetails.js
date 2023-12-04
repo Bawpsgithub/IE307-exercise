@@ -2,20 +2,16 @@ import React from 'react';
 import { View, Text, StyleSheet, Button } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
-const Home = () => {
+const NotificationsDetails = () => {
   const navigation = useNavigation();
-  const handleDetails = () => {
-    navigation.navigate('HomeDetails');
-  }
 
-  return (    
+  return (
     <View style={styles.container}>
-      <Text>Home Screen</Text>
-      <Button title="Go to Details" onPress={handleDetails} />
+      <Text>Notifications Details Screen</Text>
     </View>
   );
 };
-
+// Ngô Nhật Huy - 20520541
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -24,4 +20,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Home;
+export default NotificationsDetails;

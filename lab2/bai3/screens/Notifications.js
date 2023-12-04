@@ -2,15 +2,15 @@ import React from 'react';
 import { View, Text, StyleSheet, Button } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
-const Home = () => {
+const Notifications = () => {
   const navigation = useNavigation();
   const handleDetails = () => {
-    navigation.navigate('HomeDetails');
+    navigation.navigate('NotificationsDetailsScreen');
   }
 
-  return (    
+  return (
     <View style={styles.container}>
-      <Text>Home Screen</Text>
+      <Text>Notifications Screen</Text>
       <Button title="Go to Details" onPress={handleDetails} />
     </View>
   );
@@ -24,4 +24,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Home;
+export default Notifications;

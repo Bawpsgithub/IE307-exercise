@@ -15,7 +15,7 @@ const Home = () => {
     </View>
   );
 };
-
+// Ngô Nhật Huy - 20520541
 const styles = StyleSheet.create({
   container: {
     flex: 1,
